@@ -1,0 +1,52 @@
+{
+  "timesheets": [
+    {
+      "id": "0",
+      "date": "01/11/22",
+      "address": "101 Clark st.",
+      "note": "There will be located some important notes. There will be located some important notes. There will be located some important notes. There will be located some important notes.",
+      "createdAt": "01/11/22"
+    },
+    {
+      "id": "1",
+      "date": "01/12/22",
+      "address": "96 Pierrepont st.",
+      "note": "There will be located some important notes. There will be located some important notes. There will be located some important notes. There will be located some important notes.",
+      "createdAt": "01/13/22"
+    },
+    {
+      "id": "2",
+      "date": "01/13/22",
+      "address": "33 Monroe pl.",
+      "note": "There will be located some important notes. There will be located some important notes. There will be located some important notes. There will be located some important notes.",
+      "createdAt": "01/13/22"
+    }
+  ],
+  "users": [
+    {
+      "id": "0",
+      "name": "Admin",
+      "role": "admin"
+    },
+    {
+      "id": "1",
+      "name": "John Doe",
+      "role": "employee"
+    },
+    {
+      "id": "2",
+      "name": "Joanna Doe",
+      "role": "employee"
+    },
+    {
+      "id": "3",
+      "name": "Vasia Pupkin",
+      "role": "employee"
+    }
+  ],
+  "jobTypes": [
+    "maintenance",
+    "planters",
+    "household"
+  ]
+}

@@ -1,32 +1,70 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+    <div class="header">
+      <!-- header -->
     </div>
-    <router-view/>
+    <div class="body-box">
+      <div id="nav" class="sidebar">
+        <Sidebar/>
+      </div>
+      <div class="content-box">
+        <router-view/>
+      </div>
+    </div>
+    <div class="footer">
+      <!-- footer -->
+    </div>
   </div>
 </template>
 
+<script>
+import Sidebar from '@/components/Sidebar.vue'
+export default {
+  components: {
+    Sidebar
+  }
+}
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
+  body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+  }
+  .body-box {
+    flex-grow: 1;
+    display: flex;
+  }
+  .content-box {
+    overflow: scroll;
+    height: 100vh;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
 
-#nav {
-  padding: 30px;
-}
+  #app {
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /*text-align: center;*/
+    color: #2c3e50;
+  }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+  #nav {
+    padding: 30px 10px 10px 30px;
+  }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+  #nav a {
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+  }
+
+  #nav a.router-link-exact-active {
+    color: #42b983;
+  }
 </style>
